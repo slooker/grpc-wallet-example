@@ -1,0 +1,19 @@
+{
+  "name": "grpc-wallet-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.9",
+    "@grpc/proto-loader": "^0.6.9",
+    "async": "^3.2.3",
+    "buf": "^0.1.1",
+    "google-protobuf": "^3.20.0-rc.2",
+    "grpc": "^1.24.11",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5"
+  },
+  "scripts": {
+    "generate": "buf generate"
+  }
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package cardservice; 
+
+service CardService {
+    // Add a card
+    rpc AddCard(CardRequest) returns (CardResponse) {}
+}
+
+message CardRequest {
+    string firstName = 1;
+    string lastName = 2;
+    int64 cardNumber = 3;
+    string expirationDate = 4;
+    int32 cvv = 5;
+}
+
+message CardResponse {
+    int32 lastFourDigits = 1;
+}
